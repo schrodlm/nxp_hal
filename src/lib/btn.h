@@ -29,13 +29,13 @@ typedef enum {
 } btn_t;
 
 /** @brief Disable button interrupt */
-#define BTN_IRQC_DISABLED 0
+#define BTN_IRQC_DISABLED 0b000
 /** @brief Trigger interrupt on rising edge */
-#define BTN_IRQC_RISING  9
+#define BTN_IRQC_RISING  0b1001
 /** @brief Trigger interrupt on falling edge */
-#define BTN_IRQC_FALLING  10
+#define BTN_IRQC_FALLING  0b1010
 /** @brief Trigger interrupt on rising and falling edge */
-#define BTN_IRQC_EITHER  11
+#define BTN_IRQC_EITHER  0b1011
 
 /**
  * @brief Button ISR callback function type
