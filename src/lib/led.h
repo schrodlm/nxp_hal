@@ -21,10 +21,10 @@
  * @brief LED identifiers
  */
 typedef enum {
+    LED_BLUE,   /**< Blue LED on PTD6 */
+    LED_RED,    /**< Red LED on PTD5 */
     LED_GREEN,  /**< Green LED on PTC0 */
     LED_YELLOW, /**< Yellow LED on PTC1 */
-    LED_RED,    /**< Red LED on PTD5 */
-    LED_BLUE,   /**< Blue LED on PTD6 */
 	LED_COUNT,  /**< Total number of LEDs */
 } led_t;
 

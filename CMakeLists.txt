@@ -129,11 +129,11 @@ ers_s32_exercise(e00_starter
         src/e00_starter/main.c
 )
 
-# ers_s32_exercise(e01_led
-#     SOURCES
-#         src/lib/led.c
-#         src/e01_led/main.c
-# )
+ers_s32_exercise(e01_led
+    SOURCES
+        src/lib/led.c
+        src/e01_led/main.c
+)
 
 # ers_s32_test(e01_led
 #     SOURCES
