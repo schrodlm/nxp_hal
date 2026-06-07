@@ -1,0 +1,15 @@
+CompileFlags:
+  CompilationDatabase: build
+  # Tell clangd to query the ARM cross-compiler for builtin macros / include paths,
+  # not the host gcc. Without this, clangd flags target-specific flags like
+  # -mcpu=cortex-m0plus and -mthumb as unknown, and misidentifies builtin types.
+  Compiler: .dependencies/arm-gnu-toolchain/bin/arm-none-eabi-gcc
+  Remove:
+    # -specs= is a GCC driver-only flag; clangd's libclang-based parser doesn't
+    # understand it and emits a "argument unused" diagnostic on every TU.
+    - -specs=*
+
+Diagnostics:
+  # Silence false positives from clangd not fully modeling the cross target's ABI.
+  Suppress:
+    - -Wunknown-warning-option

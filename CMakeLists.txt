@@ -31,6 +31,9 @@ set(CMAKE_EXE_LINKER_FLAGS_INIT "-Wl,-gc-sections,--print-memory-usage -nostartf
 project(ers_s32 C ASM)
 set(CMAKE_C_STANDARD 23)
 
+# Emit compile_commands.json for clangd
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Common compiler definitions
 add_compile_definitions(CPU_S32K118 START_FROM_FLASH)
 
