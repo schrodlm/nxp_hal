@@ -1,18 +1,21 @@
 SET(CMAKE_SYSTEM_NAME Generic)
 SET(CMAKE_SYSTEM_VERSION 1)
 
-cmake_minimum_required(VERSION 4.1)
+cmake_minimum_required(VERSION 3.30)
+
+set(ARM_BINARIES "${CMAKE_CURRENT_SOURCE_DIR}/.dependencies/arm-gnu-toolchain/bin")
+set(OPENOCD "${CMAKE_CURRENT_SOURCE_DIR}/.dependencies/openocd/bin/openocd")
 
 # Specify the cross compiler before project()
 SET(CMAKE_C_COMPILER_WORKS 1)
-set(CMAKE_C_COMPILER arm-none-eabi-gcc)
+set(CMAKE_C_COMPILER "${ARM_BINARIES}/arm-none-eabi-gcc")
 SET(CMAKE_CXX_COMPILER_WORKS 1)
-set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
-set(AS arm-none-eabi-as)
-set(AR arm-none-eabi-ar)
-set(OBJCOPY arm-none-eabi-objcopy)
-set(OBJDUMP arm-none-eabi-objdump)
-set(SIZE arm-none-eabi-size)
+set(CMAKE_CXX_COMPILER "${ARM_BINARIES}/arm-none-eabi-g++")
+set(AS "${ARM_BINARIES}/arm-none-eabi-as")
+set(AR "${ARM_BINARIES}/arm-none-eabi-ar")
+set(OBJCOPY "${ARM_BINARIES}/arm-none-eabi-objcopy")
+set(OBJDUMP "${ARM_BINARIES}/arm-none-eabi-objdump")
+set(SIZE "${ARM_BINARIES}/arm-none-eabi-size")
 
 # MCU configuration
 set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/devices/S32K118/linker/gcc/S32K118_25_flash.ld)
@@ -101,7 +104,7 @@ function(ers_s32_exercise TARGET_NAME)
 
     # Create upload target
     add_custom_target(UP_${TARGET_NAME}.elf
-            COMMAND openocd -f interface/cmsis-dap.cfg -c "transport select swd" -f target/s32k.cfg -c "init; kinetis fopt 0x7f; program ${TARGET_NAME}.hex verify reset exit"
+            COMMAND ${OPENOCD} -f interface/cmsis-dap.cfg -c "transport select swd" -f target/s32k.cfg -c "init\; kinetis fopt 0x7f\; program ${TARGET_NAME}.hex verify reset exit"
             WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
             COMMENT "Uploading ${TARGET_NAME}.hex to target"
     )
@@ -123,142 +126,142 @@ ers_s32_exercise(e00_starter
         src/e00_starter/main.c
 )
 
-ers_s32_exercise(e01_led
-    SOURCES
-        src/lib/led.c
-        src/e01_led/main.c
-)
+# ers_s32_exercise(e01_led
+#     SOURCES
+#         src/lib/led.c
+#         src/e01_led/main.c
+# )
 
-ers_s32_test(e01_led
-    SOURCES
-        src/lib/led.c
-        src/e01_led/test.c
-)
+# ers_s32_test(e01_led
+#     SOURCES
+#         src/lib/led.c
+#         src/e01_led/test.c
+# )
 
-ers_s32_exercise(e02_btn
-    SOURCES
-        src/lib/led.c
-        src/lib/btn.c
-        src/e02_btn/main.c
-)
+# ers_s32_exercise(e02_btn
+#     SOURCES
+#         src/lib/led.c
+#         src/lib/btn.c
+#         src/e02_btn/main.c
+# )
 
-ers_s32_test(e02_btn
-    SOURCES
-        src/lib/btn.c
-        src/e02_btn/test.c
-)
+# ers_s32_test(e02_btn
+#     SOURCES
+#         src/lib/btn.c
+#         src/e02_btn/test.c
+# )
 
-ers_s32_exercise(e03_btn_cnt
-        SOURCES
-        src/lib/led.c
-        src/lib/btn.c
-        src/lib/btn_cnt.c
-        src/e03_btn_cnt/main.c
-)
+# ers_s32_exercise(e03_btn_cnt
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/btn.c
+#         src/lib/btn_cnt.c
+#         src/e03_btn_cnt/main.c
+# )
 
-ers_s32_test(e03_btn_cnt
-        SOURCES
-        src/lib/btn.c
-        src/lib/btn_cnt.c
-        src/e03_btn_cnt/test.c
-)
+# ers_s32_test(e03_btn_cnt
+#         SOURCES
+#         src/lib/btn.c
+#         src/lib/btn_cnt.c
+#         src/e03_btn_cnt/test.c
+# )
 
-ers_s32_exercise(e04_kpad
-        SOURCES
-        src/lib/led.c
-        src/lib/kpad.c
-        src/e04_kpad/main.c
-)
+# ers_s32_exercise(e04_kpad
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/kpad.c
+#         src/e04_kpad/main.c
+# )
 
-ers_s32_exercise(e05_enc
-        SOURCES
-        src/lib/led.c
-        src/lib/enc.c
-        src/e05_enc/main.c
-)
+# ers_s32_exercise(e05_enc
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/enc.c
+#         src/e05_enc/main.c
+# )
 
-ers_s32_exercise(e06_servo
-        SOURCES
-        src/lib/led.c
-        src/lib/enc.c
-        src/lib/servo.c
-        src/e06_servo/main.c
-)
+# ers_s32_exercise(e06_servo
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/enc.c
+#         src/lib/servo.c
+#         src/e06_servo/main.c
+# )
 
-ers_s32_exercise(e07_lcd
-        SOURCES
-        src/lib/led.c
-        src/lib/spi.c
-        src/lib/lcd.c
-        src/lib/lcd_font.c
-        src/e07_lcd/main.c
-)
+# ers_s32_exercise(e07_lcd
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/spi.c
+#         src/lib/lcd.c
+#         src/lib/lcd_font.c
+#         src/e07_lcd/main.c
+# )
 
-ers_s32_exercise(e07_lcd-dma
-        SOURCES
-        src/lib/led.c
-        src/lib/spi.c
-        src/lib/lcd.c
-        src/lib/lcd_font.c
-        src/e07_lcd/main.c
-        DEFINITIONS
-        SPI_WITH_DMA
-)
+# ers_s32_exercise(e07_lcd-dma
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/spi.c
+#         src/lib/lcd.c
+#         src/lib/lcd_font.c
+#         src/e07_lcd/main.c
+#         DEFINITIONS
+#         SPI_WITH_DMA
+# )
 
-ers_s32_exercise(e08_eeprom
-        SOURCES
-        src/lib/led.c
-        src/lib/spi.c
-        src/lib/eeprom.c
-        src/e08_eeprom/main.c
-)
+# ers_s32_exercise(e08_eeprom
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/spi.c
+#         src/lib/eeprom.c
+#         src/e08_eeprom/main.c
+# )
 
-ers_s32_test(e08_eeprom
-        SOURCES
-        src/lib/spi.c
-        src/lib/eeprom.c
-        src/e08_eeprom/test.c
-)
+# ers_s32_test(e08_eeprom
+#         SOURCES
+#         src/lib/spi.c
+#         src/lib/eeprom.c
+#         src/e08_eeprom/test.c
+# )
 
 
-ers_s32_exercise(e09_joy
-        SOURCES
-        src/lib/led.c
-        src/lib/joy.c
-        src/e09_joy/main.c
-)
+# ers_s32_exercise(e09_joy
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/joy.c
+#         src/e09_joy/main.c
+# )
 
-ers_s32_exercise(e10_sht
-        SOURCES
-        src/lib/led.c
-        src/lib/btn.c
-        src/lib/enc.c
-        src/lib/spi.c
-        src/lib/lcd.c
-        src/lib/lcd_font.c
-        src/lib/eeprom.c
-        src/lib/sht40.c
-        src/e10_sht/main.c
-)
+# ers_s32_exercise(e10_sht
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/btn.c
+#         src/lib/enc.c
+#         src/lib/spi.c
+#         src/lib/lcd.c
+#         src/lib/lcd_font.c
+#         src/lib/eeprom.c
+#         src/lib/sht40.c
+#         src/e10_sht/main.c
+# )
 
-ers_s32_exercise(e11_can
-        SOURCES
-        src/lib/led.c
-        src/lib/btn.c
-        src/lib/enc.c
-        src/lib/joy.c
-        src/lib/spi.c
-        src/lib/lcd.c
-        src/lib/lcd_font.c
-        src/lib/eeprom.c
-        src/lib/sht40.c
-        src/lib/can.c
-        src/e11_can/main.c
-)
+# ers_s32_exercise(e11_can
+#         SOURCES
+#         src/lib/led.c
+#         src/lib/btn.c
+#         src/lib/enc.c
+#         src/lib/joy.c
+#         src/lib/spi.c
+#         src/lib/lcd.c
+#         src/lib/lcd_font.c
+#         src/lib/eeprom.c
+#         src/lib/sht40.c
+#         src/lib/can.c
+#         src/e11_can/main.c
+# )
 
-# Add all the necessary source files for the punch press exercise
+# # Add all the necessary source files for the punch press exercise
 
-ers_s32_exercise(e12_punchpress
-        SOURCES
-        src/e12_punchpress/main.c
-)
+# ers_s32_exercise(e12_punchpress
+#         SOURCES
+#         src/e12_punchpress/main.c
+# )
