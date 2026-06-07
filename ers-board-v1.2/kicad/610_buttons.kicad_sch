@@ -1,0 +1,2012 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0bd8d4b2-39d7-4b80-a0d7-5fe81b664c2b")
+	(paper "A3")
+	(lib_symbols
+		(symbol "ers-s32-board:PTS815SJM250SMTR_LFS"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at -5.08 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "PTS815SJM250SMTR_LFS"
+				(at -5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "ers-s32-board:PTS815SJM250SMTR_LFS"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ckswitches.com/media/2728/pts815.pdf"
+				(at 0 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"
+				(at 0 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "C & K COMPONENTS"
+				(at 0 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ManID" "PTS815SJM250SMTR LFS"
+				(at 0 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "611-PTS815SJM250SMTR"
+				(at 0 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PTS815SJM250SMTR_LFS_0_1"
+				(circle
+					(center -2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ers-s32-board:R_0603"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_0603"
+				(at 0.762 0.762 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 12.192 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Precision" "1% 100mW"
+				(at 0.762 -2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 0 72 72 1)
+					)
+					(justify left)
+				)
+			)
+			(property "Size" "0603"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 0 72 72 1)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "R resistor 0603 125mW"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0603_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_0603_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ers-s32-board:VCC_3V3_PERIPH"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC_3V3_PERIPH"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC_3V3_PERIPH\""
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_3V3_PERIPH_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_3V3_PERIPH_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 215.9 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48247218-4acd-49f0-946c-76ac764c21bd")
+	)
+	(junction
+		(at 223.52 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63303d08-ec99-4dc1-afa3-bc954fe1a630")
+	)
+	(junction
+		(at 172.72 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85184daf-2c2b-4566-8456-a24772976c5f")
+	)
+	(junction
+		(at 218.44 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93aeb757-4bee-4209-9efe-cd930d9a6ce9")
+	)
+	(junction
+		(at 220.98 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93f3acf0-c42c-4326-8657-1bb36eaa62ee")
+	)
+	(junction
+		(at 172.72 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6a94f50-db02-4424-aed1-31828ad0eae1")
+	)
+	(junction
+		(at 223.52 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7d8c287-4a94-4256-b94a-25cf28699b79")
+	)
+	(junction
+		(at 172.72 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c896651a-d49c-449a-a6a7-23dd5bc4bdd3")
+	)
+	(junction
+		(at 218.44 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da17dae3-f4d0-4fd9-97a0-9e4bdc4bf9a0")
+	)
+	(junction
+		(at 220.98 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e254b1ba-f234-4de2-a460-a011fb6f6d20")
+	)
+	(wire
+		(pts
+			(xy 218.44 144.78) (xy 233.68 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "000e12fc-0829-4c55-a439-2909d710b11b")
+	)
+	(wire
+		(pts
+			(xy 172.72 106.68) (xy 172.72 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13caa2cd-9fef-4d1f-b686-940f054cda25")
+	)
+	(wire
+		(pts
+			(xy 172.72 114.3) (xy 172.72 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f6a66e-9759-4557-ac27-b9eb0ea24cbe")
+	)
+	(wire
+		(pts
+			(xy 215.9 170.18) (xy 215.9 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23f5f716-0a96-4f16-bc8e-5680c6da4bb1")
+	)
+	(wire
+		(pts
+			(xy 223.52 124.46) (xy 223.52 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3760e3a9-d3ae-417e-b32d-55a98978c1b6")
+	)
+	(wire
+		(pts
+			(xy 172.72 129.54) (xy 182.88 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3efafe61-dcb2-42fc-b316-0dd90aafec2c")
+	)
+	(wire
+		(pts
+			(xy 215.9 175.26) (xy 218.44 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "415654fe-df6f-4a1e-8454-1db836d5812a")
+	)
+	(wire
+		(pts
+			(xy 223.52 114.3) (xy 223.52 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49c45668-3d92-4d87-9865-46a0fc6847d9")
+	)
+	(wire
+		(pts
+			(xy 215.9 160.02) (xy 215.9 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ac2dec-e279-4b23-a788-fc3fd2d7b5d6")
+	)
+	(wire
+		(pts
+			(xy 223.52 114.3) (xy 233.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ba081e5-4a75-448d-b5a0-68b37e86f9e3")
+	)
+	(wire
+		(pts
+			(xy 193.04 144.78) (xy 218.44 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "717de598-95aa-4268-8e30-4fb8b097010a")
+	)
+	(wire
+		(pts
+			(xy 223.52 175.26) (xy 223.52 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "853d50bd-25b9-4aab-820e-d16c97af9e71")
+	)
+	(wire
+		(pts
+			(xy 172.72 129.54) (xy 172.72 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960aa40a-b174-474c-bbc6-78fa315bf0a9")
+	)
+	(wire
+		(pts
+			(xy 193.04 114.3) (xy 223.52 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98b7c9b8-4ddb-45f6-b94a-6fe041fa74af")
+	)
+	(wire
+		(pts
+			(xy 220.98 129.54) (xy 233.68 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e0fa7ea-6cef-4ab9-af2d-c610cf6bf761")
+	)
+	(wire
+		(pts
+			(xy 172.72 160.02) (xy 182.88 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a570329f-0067-43a9-a732-43ee3b6cecfd")
+	)
+	(wire
+		(pts
+			(xy 220.98 129.54) (xy 220.98 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a57f2364-4fb2-4a12-b461-d502f5b177ae")
+	)
+	(wire
+		(pts
+			(xy 220.98 139.7) (xy 220.98 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a66cab47-cf15-4adc-a37d-10e448ee9b00")
+	)
+	(wire
+		(pts
+			(xy 193.04 160.02) (xy 215.9 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acffb71b-fb27-4e79-ad58-3deb764dbdd1")
+	)
+	(wire
+		(pts
+			(xy 215.9 160.02) (xy 233.68 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63c914e-ba3d-47a1-aaff-0e3ea91c45f2")
+	)
+	(wire
+		(pts
+			(xy 218.44 175.26) (xy 220.98 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd49f8fe-5893-46f5-b08b-21e8c4d9fabc")
+	)
+	(wire
+		(pts
+			(xy 172.72 144.78) (xy 172.72 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc055037-eb48-4b93-b537-1a56bcfd500b")
+	)
+	(wire
+		(pts
+			(xy 218.44 144.78) (xy 218.44 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0c67444-58e8-4763-93c3-137a7c591d36")
+	)
+	(wire
+		(pts
+			(xy 220.98 175.26) (xy 223.52 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f63f02-5993-4936-8947-48b64cbf465b")
+	)
+	(wire
+		(pts
+			(xy 172.72 144.78) (xy 182.88 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f903e5-a83c-4cf6-b25e-f414254d8c70")
+	)
+	(wire
+		(pts
+			(xy 193.04 129.54) (xy 220.98 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e4fb7b-e038-4e3a-b6f4-f55d8fb4eed7")
+	)
+	(wire
+		(pts
+			(xy 218.44 154.94) (xy 218.44 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e40c2c5f-1fc7-4c0c-9173-7c83719f4f71")
+	)
+	(wire
+		(pts
+			(xy 172.72 114.3) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f408e573-6244-4a47-ad83-a5a0cfa59bf9")
+	)
+	(hierarchical_label "BTN_4"
+		(shape output)
+		(at 233.68 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f4bce26-2f93-4d09-a2b8-c22607175562")
+	)
+	(hierarchical_label "BTN_3"
+		(shape output)
+		(at 233.68 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "69cfd65b-8037-4446-a8e5-5dc2f0f23cb4")
+	)
+	(hierarchical_label "BTN_1"
+		(shape output)
+		(at 233.68 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b99fc923-5992-4000-a7d4-75ddf43f8ddc")
+	)
+	(hierarchical_label "BTN_2"
+		(shape output)
+		(at 233.68 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1a786d7-c6bb-46d5-8ceb-454b99db5f56")
+	)
+	(symbol
+		(lib_id "ers-s32-board:R_0603")
+		(at 223.52 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "01197429-4e61-4905-956a-376f9154bed9")
+		(property "Reference" "R27"
+			(at 220.98 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 220.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 223.52 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 223.52 111.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Precision" "1% 100mW"
+			(at 220.98 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Size" "0603"
+			(at 220.98 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "DigiKey" ""
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "0603WAF1002T5E"
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4eeb9802-5e0a-4f71-945a-a7148726834e")
+		)
+		(pin "1"
+			(uuid "0cfd9c0e-ce8e-42d3-86ed-92cef87e3318")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:PTS815SJM250SMTR_LFS")
+		(at 187.96 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d9748e4-5d68-4c4e-8fe1-e7e3a078234b")
+		(property "Reference" "S2"
+			(at 187.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS815SJM250SMTR_LFS"
+			(at 187.96 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ers-s32-board:PTS815SJM250SMTR_LFS"
+			(at 187.96 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2728/pts815.pdf"
+			(at 187.96 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"
+			(at 187.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "C & K COMPONENTS"
+			(at 187.96 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "PTS815SJM250SMTRLFS"
+			(at 187.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "611-PTS815SJM250SMTR"
+			(at 187.96 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" ""
+			(at 187.96 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C2689510"
+			(at 187.96 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e66348cb-6135-4de4-ab08-b1e2b2e71c2d")
+		)
+		(pin "2"
+			(uuid "30391b67-f1d3-4f0f-8210-641db6cc8e7f")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:PTS815SJM250SMTR_LFS")
+		(at 187.96 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "663fab41-29c8-4d60-81ed-d2d5fbba0309")
+		(property "Reference" "S3"
+			(at 187.96 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS815SJM250SMTR_LFS"
+			(at 187.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ers-s32-board:PTS815SJM250SMTR_LFS"
+			(at 187.96 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2728/pts815.pdf"
+			(at 187.96 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"
+			(at 187.96 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "C & K COMPONENTS"
+			(at 187.96 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "PTS815SJM250SMTRLFS"
+			(at 187.96 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "611-PTS815SJM250SMTR"
+			(at 187.96 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" ""
+			(at 187.96 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C2689510"
+			(at 187.96 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da4e42be-fed1-4735-a23e-1b8df2c9101c")
+		)
+		(pin "2"
+			(uuid "47249711-9718-496f-88e2-93db894be45d")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 223.52 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74e6e257-97b2-48fc-93a8-fb5a7ab45c4d")
+		(property "Reference" "#PWR083"
+			(at 223.52 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83bc0071-ae0a-4de5-9602-e26e41d36f04")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:PTS815SJM250SMTR_LFS")
+		(at 187.96 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "803a8c3a-5448-4ed3-a386-edd5474f1dd7")
+		(property "Reference" "S5"
+			(at 187.96 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS815SJM250SMTR_LFS"
+			(at 187.96 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ers-s32-board:PTS815SJM250SMTR_LFS"
+			(at 187.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2728/pts815.pdf"
+			(at 187.96 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"
+			(at 187.96 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "C & K COMPONENTS"
+			(at 187.96 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "PTS815SJM250SMTRLFS"
+			(at 187.96 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "611-PTS815SJM250SMTR"
+			(at 187.96 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" ""
+			(at 187.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C2689510"
+			(at 187.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14fe3ab9-192b-47f1-915a-0027ce359440")
+		)
+		(pin "2"
+			(uuid "d9e8a0d4-b8b0-45a1-9785-045f89cf239c")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:PTS815SJM250SMTR_LFS")
+		(at 187.96 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "912240d0-c06a-4cd0-bb11-a15f834fab3c")
+		(property "Reference" "S4"
+			(at 187.96 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS815SJM250SMTR_LFS"
+			(at 187.96 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ers-s32-board:PTS815SJM250SMTR_LFS"
+			(at 187.96 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/2728/pts815.pdf"
+			(at 187.96 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches Tact Switch, 12 VDC, 50 mA, 4.2x3.2, 2.5mm H, 180gf, J leads"
+			(at 187.96 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "C & K COMPONENTS"
+			(at 187.96 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "PTS815SJM250SMTRLFS"
+			(at 187.96 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "611-PTS815SJM250SMTR"
+			(at 187.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" ""
+			(at 187.96 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C2689510"
+			(at 187.96 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3c3eab0-0e6c-4bd3-96da-5b1a05cbe0db")
+		)
+		(pin "2"
+			(uuid "aa478bf4-dc5c-4d08-b758-3c1840b6271a")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:R_0603")
+		(at 218.44 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a368c4e2-278f-4dbc-8f95-1ad38a3b6384")
+		(property "Reference" "R25"
+			(at 215.9 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 215.9 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 218.44 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 218.44 141.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Precision" "1% 100mW"
+			(at 215.9 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Size" "0603"
+			(at 215.9 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "DigiKey" ""
+			(at 218.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 218.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 218.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "0603WAF1002T5E"
+			(at 218.44 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c6fba5e-41fe-49dc-83a4-6568535b2034")
+		)
+		(pin "1"
+			(uuid "b84a077e-2b99-4366-a939-77cb59b58b66")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:VCC_3V3_PERIPH")
+		(at 172.72 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1b97e07-3a8a-4e07-83f0-d856b2a71e9e")
+		(property "Reference" "#PWR082"
+			(at 172.72 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC_3V3_PERIPH"
+			(at 172.72 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC_3V3_PERIPH\""
+			(at 172.72 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76a18dc0-9dc1-49b9-a900-891750816e0b")
+		)
+		(instances
+			(project ""
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:R_0603")
+		(at 220.98 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d922e976-9b97-4af6-9e14-32ac46ee1512")
+		(property "Reference" "R26"
+			(at 218.44 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 218.44 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 220.98 124.968 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 220.98 126.746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Precision" "1% 100mW"
+			(at 218.44 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Size" "0603"
+			(at 218.44 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "DigiKey" ""
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "0603WAF1002T5E"
+			(at 220.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "87983ca3-1409-44d5-adc7-414b44338fe6")
+		)
+		(pin "1"
+			(uuid "520bbc5c-39fb-4179-972c-6929438cabc1")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ers-s32-board:R_0603")
+		(at 215.9 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f911da11-cd77-4b9b-ba0d-b567af5ea1df")
+		(property "Reference" "R24"
+			(at 213.36 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 213.36 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 215.9 155.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 215.9 157.226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Precision" "1% 100mW"
+			(at 213.36 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Size" "0603"
+			(at 213.36 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "DigiKey" ""
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ManID" "0603WAF1002T5E"
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bb846fc2-7ee8-4763-b6c6-d37b18fc666a")
+		)
+		(pin "1"
+			(uuid "8dc42632-3c6b-4154-81f5-42d8cead469d")
+		)
+		(instances
+			(project "ers-s32-board"
+				(path "/fb1b514e-5a1f-4589-b469-a2ab24d6b646/f9808759-2a22-4a89-9815-9b50c69aa45a"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,136 @@
+(footprint "L_choke_DLW21SZ"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.7 -1.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "fa3f6ee1-ab83-4d32-b4cb-7b15e0a74324")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_choke_DLW21SZ"
+		(at 0 11.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d8e43b84-8f81-41bd-91e2-e8d45ee880aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 -0.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "758b2110-fa8f-4fae-bf16-2fd70f1a8a63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -0.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a753a79d-73a4-4d39-b37b-f10525cc72b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.75 1.2)
+		(end -0.75 0.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "46fc9cf2-f0ed-4433-a9dd-0d544778bd22")
+	)
+	(fp_line
+		(start -0.25 1.2)
+		(end -0.75 1.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6e3dc716-8d50-4972-95f2-5518b3d17a9b")
+	)
+	(fp_rect
+		(start -0.7 -1.1)
+		(end 0.7 1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "39376bd0-4dc3-4718-8401-f97c731a2f25")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 12.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8b81c869-f1e7-468f-a479-7e760ee431b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.4 0.8 90)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0c78166c-e10b-42f0-baaa-8e5791e672e0")
+	)
+	(pad "2" smd rect
+		(at -0.4 -0.8 90)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7f6fb51b-b516-4a00-b91a-b7e0eed61a64")
+	)
+	(pad "3" smd rect
+		(at 0.4 -0.8 90)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "17637a03-e10d-4966-94f8-a9aac6fa4884")
+	)
+	(pad "4" smd rect
+		(at 0.4 0.8 90)
+		(size 0.5 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e460c245-c353-4ae1-a0ed-2f72124d0e83")
+	)
+	(embedded_fonts no)
+	(model "${IMA_3D_MODELS}/DLW21SZ181XQ2L--3DModel-STEP-56544.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
