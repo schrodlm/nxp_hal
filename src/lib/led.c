@@ -1,3 +1,28 @@
+/**
+ * @file led.c
+ * @brief LED HAL implementation.
+ *
+ * How an LED is driven
+ * --------------------
+ * The four LEDs live on two ports (PORT C and PORT D). Each LED pin is
+ * configured as a plain GPIO output (PORTx->PCR[n].MUX = 1, and the
+ * corresponding bit set in PTx->PDDR). LEDs are wired pin → resistor → LED →
+ * ground (active-high), so driving the pin HIGH lights the LED.
+ *
+ * After initialisation the LEDs are explicitly driven LOW (off) so the
+ * starting state is well-defined regardless of what the reset value of the
+ * output register happened to be.
+ *
+ * Changing one LED at a time
+ * --------------------------
+ * led_set_state() uses the per-bit "set" and "clear" registers (PTx->PSOR to
+ * drive HIGH, PTx->PCOR to drive LOW) rather than the wholesale output
+ * register (PTx->PDOR). PSOR and PCOR are write-1-to-act: writing 1 to a bit
+ * acts on that pin, writing 0 does nothing. This means a single assignment
+ * touches exactly the requested LED and leaves every other pin on the port
+ * untouched — no read-modify-write, no risk of clobbering neighbouring LEDs.
+ */
+
 #include <lib/led.h>
 
 #include <device_registers.h>
