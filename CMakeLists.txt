@@ -169,12 +169,12 @@ ers_s32_test(e03_btn_cnt
         src/e03_btn_cnt/test.c
 )
 
-# ers_s32_exercise(e04_kpad
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/kpad.c
-#         src/e04_kpad/main.c
-# )
+ers_s32_exercise(e04_kpad
+        SOURCES
+        src/lib/led.c
+        src/lib/kpad.c
+        src/e04_kpad/main.c
+)
 
 # ers_s32_exercise(e05_enc
 #         SOURCES
