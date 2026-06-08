@@ -183,13 +183,13 @@ ers_s32_exercise(e05_enc
         src/e05_enc/main.c
 )
 
-# ers_s32_exercise(e06_servo
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/enc.c
-#         src/lib/servo.c
-#         src/e06_servo/main.c
-# )
+ers_s32_exercise(e06_servo
+        SOURCES
+        src/lib/led.c
+        src/lib/enc.c
+        src/lib/servo.c
+        src/e06_servo/main.c
+)
 
 # ers_s32_exercise(e07_lcd
 #         SOURCES
