@@ -154,20 +154,20 @@ ers_s32_test(e02_btn
         src/e02_btn/test.c
 )
 
-# ers_s32_exercise(e03_btn_cnt
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/btn.c
-#         src/lib/btn_cnt.c
-#         src/e03_btn_cnt/main.c
-# )
+ers_s32_exercise(e03_btn_cnt
+        SOURCES
+        src/lib/led.c
+        src/lib/btn.c
+        src/lib/btn_cnt.c
+        src/e03_btn_cnt/main.c
+)
 
-# ers_s32_test(e03_btn_cnt
-#         SOURCES
-#         src/lib/btn.c
-#         src/lib/btn_cnt.c
-#         src/e03_btn_cnt/test.c
-# )
+ers_s32_test(e03_btn_cnt
+        SOURCES
+        src/lib/btn.c
+        src/lib/btn_cnt.c
+        src/e03_btn_cnt/test.c
+)
 
 # ers_s32_exercise(e04_kpad
 #         SOURCES

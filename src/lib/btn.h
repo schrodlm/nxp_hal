@@ -171,4 +171,6 @@ void btn_enable_isr(void);
  */
 void btn_disable_isr(void);
 
+bool btn_isfr_pending(btn_t btn);
+
 #endif

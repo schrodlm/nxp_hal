@@ -59,6 +59,14 @@ static const btn_info_t btn_map[] = {
     [BTN_4] = {PORTE, PTE, 8},
 };
 
+bool btn_isfr_pending(btn_t btn) {
+    if(btn >= BTN_COUNT) return false;
+
+    const btn_info_t *b = &btn_map[btn];
+    uint32_t isfr = b->port->ISFR;
+    return (isfr >> b->pin) & 1u;
+}
+
 _Static_assert(sizeof(btn_map) / sizeof(btn_map[0]) == BTN_COUNT, "btn_map size must match BTN_COUNT");
 
 static btn_isr_callback_t user_callback = 0;
