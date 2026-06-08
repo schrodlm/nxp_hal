@@ -176,12 +176,12 @@ ers_s32_exercise(e04_kpad
         src/e04_kpad/main.c
 )
 
-# ers_s32_exercise(e05_enc
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/enc.c
-#         src/e05_enc/main.c
-# )
+ers_s32_exercise(e05_enc
+        SOURCES
+        src/lib/led.c
+        src/lib/enc.c
+        src/e05_enc/main.c
+)
 
 # ers_s32_exercise(e06_servo
 #         SOURCES
