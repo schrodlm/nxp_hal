@@ -3,6 +3,11 @@
 
 #include <stdint.h>
 
+#define LCD_FONT_START_CHAR 0x20
+#define LCD_FONT_END_CHAR 0x7F
+#define LCD_FONT_CHAR_WIDTH 5
+#define LCD_FONT_CHAR_HEIGHT 7
+
 /**
  * @brief LCD font (5x7 pixels)
  *

@@ -191,14 +191,14 @@ ers_s32_exercise(e06_servo
         src/e06_servo/main.c
 )
 
-# ers_s32_exercise(e07_lcd
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/spi.c
-#         src/lib/lcd.c
-#         src/lib/lcd_font.c
-#         src/e07_lcd/main.c
-# )
+ers_s32_exercise(e07_lcd
+        SOURCES
+        src/lib/led.c
+        src/lib/spi.c
+        src/lib/lcd.c
+        src/lib/lcd_font.c
+        src/e07_lcd/main.c
+)
 
 # ers_s32_exercise(e07_lcd-dma
 #         SOURCES
