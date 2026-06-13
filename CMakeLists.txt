@@ -211,20 +211,20 @@ ers_s32_exercise(e07_lcd
 #         SPI_WITH_DMA
 # )
 
-# ers_s32_exercise(e08_eeprom
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/spi.c
-#         src/lib/eeprom.c
-#         src/e08_eeprom/main.c
-# )
+ers_s32_exercise(e08_eeprom
+        SOURCES
+        src/lib/led.c
+        src/lib/spi.c
+        src/lib/eeprom.c
+        src/e08_eeprom/main.c
+)
 
-# ers_s32_test(e08_eeprom
-#         SOURCES
-#         src/lib/spi.c
-#         src/lib/eeprom.c
-#         src/e08_eeprom/test.c
-# )
+ers_s32_test(e08_eeprom
+        SOURCES
+        src/lib/spi.c
+        src/lib/eeprom.c
+        src/e08_eeprom/test.c
+)
 
 
 # ers_s32_exercise(e09_joy
