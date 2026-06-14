@@ -234,18 +234,18 @@ ers_s32_exercise(e09_joy
         src/e09_joy/main.c
 )
 
-# ers_s32_exercise(e10_sht
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/btn.c
-#         src/lib/enc.c
-#         src/lib/spi.c
-#         src/lib/lcd.c
-#         src/lib/lcd_font.c
-#         src/lib/eeprom.c
-#         src/lib/sht40.c
-#         src/e10_sht/main.c
-# )
+ers_s32_exercise(e10_sht
+        SOURCES
+        src/lib/led.c
+        src/lib/btn.c
+        src/lib/enc.c
+        src/lib/spi.c
+        src/lib/lcd.c
+        src/lib/lcd_font.c
+        src/lib/eeprom.c
+        src/lib/sht40.c
+        src/e10_sht/main.c
+)
 
 # ers_s32_exercise(e11_can
 #         SOURCES
