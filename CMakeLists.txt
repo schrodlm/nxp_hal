@@ -227,12 +227,12 @@ ers_s32_test(e08_eeprom
 )
 
 
-# ers_s32_exercise(e09_joy
-#         SOURCES
-#         src/lib/led.c
-#         src/lib/joy.c
-#         src/e09_joy/main.c
-# )
+ers_s32_exercise(e09_joy
+        SOURCES
+        src/lib/led.c
+        src/lib/joy.c
+        src/e09_joy/main.c
+)
 
 # ers_s32_exercise(e10_sht
 #         SOURCES
