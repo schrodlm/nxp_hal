@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug current CMake target",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "servertype": "openocd",
+            "serverpath": "${workspaceFolder}/.dependencies/openocd/bin/openocd",
+            "gdbPath": "${workspaceFolder}/.dependencies/arm-gnu-toolchain/bin/arm-none-eabi-gdb",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/s32k.cfg"
+            ],
+            "openOCDLaunchCommands": [
+                "transport select swd"
+            ],
+            "svdFile": "${workspaceFolder}/devices/S32K118/S32K118.svd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "CMake: build"
+        }
+    ]
+}
